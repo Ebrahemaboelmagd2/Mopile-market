@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+.navbar {
+    display: grid !important;
+    justify-content: center !important;
+    box-shadow: 0 1px 5px rgb(54 54 54 / 18%);
+}
+.collapse-I  {
+    margin-top: 15px ;
+}
+.navbar li {
+    list-style: none;
+    margin-right: 20px;
+    position: relative;
+    height: 30px;
+}
+.navbar li a{
+    color: #7b5244;
+    font-weight: 600;
+    position: relative;
+    height: 30px;
+}
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #7b5244;
+    transition: 0.5s;
+}
+.navbar li a:hover::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7b5244;
+}
+.navbar .movement::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0%;
+    background-color: #7b5244;
+    transition: 0.5s;
+}
+.navbar .movement:hover::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #7b5244;
+}
+
+.navbar li a::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 0px;
+    height: 0%;
+    background-color: #7b5244;
+    transition: 0.5s;
+}
+.navbar li a:hover::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #7b5244;
+}
+
+.navbar .movement::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height:0px;
+    background-color: #7b5244;
+    transition: 0.5s;
+}
+.navbar .movement:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7b5244;
+    transition: 0.5s;
+}
+figure {
+    width: 108px !important;
+    height: 35px !important;
+    margin-right: 45px !important;
+}
+main {
+    width: 100%;
+    height: 500px;
+
+}
+main  article {
+    background-image: url(image/5bd2c80d83b9f-wallpaper-preview.jpg);
+    width: 80%;
+    height: 500px;
+    background-size: cover;
+    margin: 20px auto;
+}
+section {
+    width: 100%;
+    height: 275px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.ParentCard {
+    margin: 35px;
+    transition: 0.7s;
+}
+.ParentCard:hover {
+    padding: 15px;
+    cursor: pointer;
+}
+.ParentCard .card {
+    width: 150px !important;
+    height: 220px !important;
+    border: none !important;
+    /* margin: 35px; */
+}
+.ParentCard img {
+    width: 130px;
+    height: 140px;
+    margin: auto;
+}
+.ParentCard h4 {
+    margin: 5px auto;
+    font-size: 15px;
+}
+.ParentCard p {
+    margin: auto;
+    font-size: 15px;
+}
+.ParentCard button {
+    margin: auto;
+    width: 95px;
+    height: 27px;
+    background-color: #a72323;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+@media ( min-width:120px) and (max-width:1576px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ParentCard {
+        display: block;
+    }
+}
+.after {
+    width: 25px;
+    height: 25px;
+    background: #613434;
+    position: absolute;
+    left: 9px;
+    top: 14px;
+    padding: 0px;
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+.content {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #2c0404;
+    font-size: 20px;
+    margin-top: 35px;
+    line-height: 2;
+    background-color: aqua;
+    display: none;
+}
+.total-price {
+    margin: auto;
+    display: none;
+    background-color: #a72323;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+}
